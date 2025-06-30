@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #3494e6;
+    --secondary-color: #ec6ead;
+    --accent-color: #38ef7d;
+    --background-color: #f5f7fa;
+    --light-color: #ffffff;
+    --dark-color: #333333;
+    --gray-color: #777777;
+    --light-gray: #f0f0f0;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --border-radius: 10px;
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    overflow: hidden;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .game-header h1 {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .game-world {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  #game-canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .game-controls {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .control-panel, .player-list {
+    flex: 1;
+    padding: 15px;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .control-panel h3, .player-list h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .control-panel p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--gray-color);
+  }
+  
+  #players {
+    list-style: none;
+  }
+  
+  #players li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+  }
+  
+  #players li img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .player-score {
+    margin-left: auto;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .game-controls {
+      flex-direction: column;
+    }
+  }
+  
+  
