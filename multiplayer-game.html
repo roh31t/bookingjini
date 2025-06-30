@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookingJini Multiplayer Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="game-header">
+      <h1>BookingJini Hotel Game</h1>
+      <div class="user-info">
+        <span id="username"></span>
+        <img id="user-avatar" src="" alt="Your avatar">
+      </div>
+    </div>
+    
+    <div class="game-world">
+      <canvas id="game-canvas"></canvas>
+    </div>
+    
+    <div class="game-controls">
+      <div class="control-panel">
+        <h3>Controls</h3>
+        <p>Use arrow keys or WASD to move</p>
+        <p>Press SPACE to interact</p>
+      </div>
+      <div class="player-list">
+        <h3>Players Online</h3>
+        <ul id="players"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js" type="module"></script>
+</body>
+</html>
